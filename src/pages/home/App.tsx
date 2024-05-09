@@ -23,7 +23,9 @@ function App() {
       <div className='mx-auto w-96 text-4xl mt-2 text-center font-semibold'>Every success journey we’ve encountered.</div>
 
       {/* Main  */}
-      <div className="mt-20 flex justify-center" style={{ height: '500px' }} >
+      <div className="mt-20 flex justify-center relative" style={{ height: '500px' }} >
+
+      <img src="images/square-group.png" className='absolute right-0 top-1/3' alt="Square Group" width={400} />
 
         {/* Image and Boxes Container w */}
         <div className='h-full flex relative justify-center items-center' style={{ width: '630px' }}>
@@ -89,7 +91,6 @@ function App() {
 
       {/* Footer  */}
       <Footer />
-
 
     </>
   );

@@ -26,7 +26,7 @@ export default function FAQs() {
     ]
     return (
         <div className=" max-w-screen-2xl mx-auto rounded-3xl" style={{ backgroundColor: '#E8EEE7' }}>
-            <div className="flex justify-between max-w-6xl mx-auto py-12">
+            <div className="relative flex justify-between max-w-6xl mx-auto py-12">
                 {/* Left Side  */}
                 <div className="mx-4">
                     <div className="covered-by-your-grace-regular text-2xl mx-auto" style={{
@@ -47,6 +47,8 @@ export default function FAQs() {
                         </>)
                     })}
                 </div>
+                
+                <img src="images/union.png" alt="Union Image" className="absolute bottom-0 left-0" width={400} />
             </div>
         </div>
     )
