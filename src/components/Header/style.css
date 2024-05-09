@@ -1,0 +1,13 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-inline: 3rem;
+    padding-block: 4px;
+    margin: auto;
+    margin-top: 1rem;
+    border: 1px solid #F1F1F1;
+    border-radius: 100px;
+}
+
+
