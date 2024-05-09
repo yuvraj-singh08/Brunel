@@ -4,8 +4,14 @@ import Carousel from '../../components/Carousel/Carousel';
 import CustomButton from '../../components/Button/Button';
 import FAQs from '../../components/FAQs/FAQs';
 import Footer from '../../components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+  const navigate = useNavigate();
+
+  function navigation() {
+    navigate('/register');
+  }
   return (
     <>
       <Header />
@@ -70,7 +76,7 @@ function App() {
             <div className='font-medium'>Wullam temporibus porro debitis dolorem, minima dicta accusanti architecto ad.</div>
           </Carousel>
           <div className="absolute bottom-5 left-12">
-            <CustomButton varient='primary'>Explore More <img className='inline ml-2' src="images/arrow-right-white.svg" alt="Arrow Right" width={20} /></CustomButton>
+            <CustomButton onClick={navigation} varient='primary'>Explore More <img className='inline ml-2' src="images/arrow-right-white.svg" alt="Arrow Right" width={20} /></CustomButton>
           </div>
         </div>
       </div>

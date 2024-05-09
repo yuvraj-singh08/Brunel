@@ -47,7 +47,7 @@ export default function Register() {
     return (
         <>
             <div className="mt-8 px-16 flex justify-between">
-                <div className=" text-3xl font-bold"><a href="/">Brunel</a></div>
+                <div className=" text-3xl font-bold"><a href="/"><img src="images/brunel.png" alt="Brunel Logo" /></a></div>
                 {success ? '' :
                     <a href="/">
                         <div className="rounded-full cursor-pointer border-2 p-3 transform hover:scale-110 hover:bg-gray-50 transition duration-300 ease-in-out">
