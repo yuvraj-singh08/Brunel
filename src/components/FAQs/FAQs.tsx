@@ -2,7 +2,7 @@ import { title } from "process";
 import ExpandingAns from "./ExpandingAns";
 
 export default function FAQs() {
-    const data = [
+    const faqData = [
         {
             title: 'Do you offer freelancers?',
             description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quo numquam alias, distinctio id eaque doloremque fuga commodi aliquam quisquam non cum ipsa, sapiente facilis. Natus tempora tenetur fugit sint!'
@@ -39,10 +39,11 @@ export default function FAQs() {
 
                 {/* Right Side  */}
                 <div className="mx-4" style={{ width: '550px' }}>
-                    {data.map((data, index) => {
+                    {faqData.map((data, index) => {
+                        console.log(index)
                         return (<>
                             <ExpandingAns title={data.title} description={data.description} key={index} />
-                            <hr className="border-t-1 border-gray-400" />
+                            {index !== faqData.length - 1 && <hr className="border-t-1 border-gray-400" />}
                         </>)
                     })}
                 </div>

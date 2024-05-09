@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import HomeLoading from './components/LoadingTemplates/HomeLoading';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,12 +16,12 @@ const Register = lazy(() => import('./pages/register/Register'));
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Suspense fallback={<div>Loading...</div>} ><App /></Suspense>,
+    element: <Suspense fallback={<HomeLoading />} ><App /></Suspense>,
     errorElement: <h1>404 Not Found</h1>
   },
   {
     path: '/register',
-    element: <Suspense fallback={<div>Loading...</div>} ><Register /></Suspense>,
+    element: <Suspense fallback={<HomeLoading />} ><Register /></Suspense>,
     errorElement: <h1>404 Not Found</h1>
   }
 ])
