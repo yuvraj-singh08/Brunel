@@ -25,7 +25,7 @@ function App() {
       {/* Main  */}
       <div className="mt-20 flex justify-center relative" style={{ height: '500px' }} >
 
-      <img src="images/square-group.png" className='absolute right-0 top-1/3' alt="Square Group" width={400} />
+
 
         {/* Image and Boxes Container w */}
         <div className='h-full flex relative justify-center items-center' style={{ width: '630px' }}>
@@ -72,6 +72,7 @@ function App() {
         </div>
         {/* Carousel Container  */}
         <div className='relative flex justify-center items-center' style={{ width: '500px' }}>
+          <img src="images/square-group.png" className='absolute right-0 top-1/4' alt="Square Group" width={400} />
           <Carousel>
             <div className='font-medium'>Enhance fortune 50 company’s insights teams research capabilities</div>
             <div className='font-medium'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam maiores ut repel</div>
